@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  
+  <h2>App List</h2>
+  <ul>
+    {{#each apps}}
+      <li>
+        <h3>{{this.name}}</h3>
+        <p>{{this.description}}</p>
+        <p>{{this.details}}</p>
+        <p>Download APK: {{this.apk}}</p>
+      </li>
+    {{/each}}
+  </ul>
+  <a href="/login">Login</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+{{#if user}}
+<p>user: {{user.fullname}}</p>
+<p>email: {{user.email}}</p>
+<form action="/users/logout" method="POST">
+    <input type="submit" value="Logout">
+</form>
+{{else}}
+<fieldset>
+    <legend>Login</legend>
+    <form action="/users/login" method="POST" data-bitwarden-watching="1">
+        <div>
+            <label for="username">Username</label>
+            <input name="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <input type="submit" value="Login">
+    </form>
+</fieldset>
+<p>Or <a href="/users/register">Register</a> a new account.</p>
+{{/if}}

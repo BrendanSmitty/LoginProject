@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "name": "colourPick",
+            "description": "Gives you colour combinations",
+            "details": "Get suggestions of colours",
+            "apk": "colourPick.apk",
+            "id": "1"
+        },
+        {
+            "name": "houseDesign",
+            "description": "Choosing your house design made simple",
+            "details": "Lets you browse ",
+            "apk": "houseDesign.apk",
+            "id": "2"
+        },
+        {
+            "name": "mathBot",
+            "description": "A powerful AI math bot",
+            "details": "This AI is capable of solving any math problem you show it",
+            "apk": "mathBot.apk",
+            "id": "3"
+        }
+    ]
+}
